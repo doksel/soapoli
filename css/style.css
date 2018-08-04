@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  background: url(../images/cirkels-achtergrond.png) repeat; }
+  body .wrap {
+    max-width: 641px;
+    width: 80%;
+    background: #ffffff;
+    margin: 0 auto; }
+  body a {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700; }
+    body a:hover {
+      color: #a8141a; }
+      body a:hover:before {
+        content: url(../images/style_menu_hover.png) !important; }
+  body #header {
+    background: url(../images/border_header.png) 0 9px repeat-y, url(../images/border_header.png) 12px 9px repeat-y, url(../images/border_header.png) 24px 9px repeat-y, url(../images/border_header.png) 36px 9px repeat-y, #000000 url(../images/border_header_row.png) right 14px repeat-y;
+    padding: 3px 0 21px 0;
+    text-align: center;
+    border-top: #000000 solid 6px;
+    border-right: #000000 solid 8px;
+    border-bottom: #000000 solid 7px;
+    border-left: #000000 solid 8px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    body #header .logo {
+      margin: 0 auto;
+      width: 267px;
+      height: 77px; }
+  body #layout {
+    margin: 25px 0;
+    overflow: hidden; }
+    body #layout #aside {
+      width: 40%;
+      max-width: 150px;
+      float: left;
+      margin-left: 22px; }
+      body #layout #aside ul {
+        line-height: 13px; }
+        body #layout #aside ul li {
+          list-style-type: none;
+          margin-bottom: 11px; }
+          body #layout #aside ul li a::before {
+            content: url(../images/style_menu.png);
+            margin-right: 4px;
+            overflow: hidden; }
+          body #layout #aside ul li ul {
+            margin-left: 14px;
+            font-size: 9px; }
+            body #layout #aside ul li ul li {
+              margin-top: 3px; }
+            body #layout #aside ul li ul a:before {
+              content: url(../images/style_submenu.png) !important; }
+            body #layout #aside ul li ul a:hover {
+              color: #a8141a; }
+              body #layout #aside ul li ul a:hover:before {
+                content: url(../images/style_submenu.png) !important; }
+    body #layout #content {
+      width: 60%;
+      max-width: 396px;
+      float: right;
+      padding: 0 50px 0 8px;
+      border-left: dotted #000000 2px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      body #layout #content h1 {
+        font-size: 15px;
+        margin-bottom: 23px; }
+      body #layout #content p {
+        margin-bottom: 23px; }
+        body #layout #content p:last-child {
+          margin-bottom: 6px; }
+  body #footer {
+    background: #000000 url(../images/cirkels-in-zwart-onder.png) no-repeat bottom;
+    overflow: hidden;
+    padding: 17px 37px 38px 27px;
+    position: relative; }
+    body #footer address {
+      color: #ffffff;
+      font-size: 9px;
+      font-style: normal;
+      line-height: 24px;
+      float: left;
+      position: absolute;
+      top: 40%; }
+    body #footer a {
+      height: 69px;
+      width: 77px;
+      float: right; }
+
+/*# sourceMappingURL=style.css.map */

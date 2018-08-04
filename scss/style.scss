@@ -1,0 +1,143 @@
+// sass --watch scss/style.scss:css/style.css
+
+@import "_mixins";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color:  #000000;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    background: url(../images/cirkels-achtergrond.png) repeat;
+
+    .wrap{
+        max-width: 641px;
+        width: 80%;
+        background: #ffffff;
+        margin: 0 auto;
+    }
+
+    a{
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 700;  
+        &:hover{
+            color: #a8141a;
+            &:before{
+                content: url(../images/style_menu_hover.png) !important;
+            }
+        }              
+    }
+
+    #header{
+        background: url(../images/border_header.png) 0 9px repeat-y,
+        url(../images/border_header.png) 12px 9px repeat-y,
+        url(../images/border_header.png) 24px 9px repeat-y,
+        url(../images/border_header.png) 36px 9px repeat-y,
+        // сделал оба варианта, репит одного изображения и ряда изображений
+        #000000 url(../images/border_header_row.png) right 14px repeat-y;
+        padding: 3px 0 21px 0;
+        text-align: center;
+        border-top: #000000 solid 6px;
+        border-right: #000000 solid 8px;
+        border-bottom: #000000 solid 7px;
+        border-left: #000000 solid 8px;
+        @include boxSizing();
+
+        .logo{
+            margin: 0 auto;
+            width: 267px;
+            height: 77px;
+        }
+    }
+
+    #layout{
+        margin: 25px 0;
+        overflow: hidden;   
+        #aside{
+            width: 40%;
+            max-width: 150px;
+            float: left;
+            margin-left: 22px;
+            ul{ 
+                line-height: 13px;
+                li{
+                    list-style-type: none;
+                    margin-bottom: 11px;
+                    a{
+                        &::before{
+                            content: url(../images/style_menu.png);
+                            margin-right:4px;
+                            overflow:hidden;
+                        }
+                    }
+                    ul{
+                        margin-left: 14px;
+                        font-size: 9px;
+                        li{
+                            margin-top: 3px;
+                        }
+                        a{
+                            &:before{
+                                content: url(../images/style_submenu.png) !important;
+                            }
+                            &:hover{
+                                color: #a8141a;
+                                &:before{
+                                    content: url(../images/style_submenu.png) !important;
+                                }
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+        #content{
+            width: 60%;
+            max-width: 396px;
+            float: right;
+            padding: 0 50px 0 8px;
+            border-left: dotted #000000 2px;  
+            @include boxSizing();
+            h1{
+                font-size: 15px;
+                margin-bottom: 23px;
+            }
+            p{
+                margin-bottom: 23px;
+                &:last-child{
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+
+    #footer{
+        background: #000000 url(../images/cirkels-in-zwart-onder.png) no-repeat bottom;
+        overflow: hidden;
+        padding: 17px 37px 38px 27px;
+        position: relative;
+        address{
+            color:  #ffffff;
+            font-size: 9px;
+            font-style: normal;
+            line-height: 24px;
+            float: left;
+            position: absolute;
+            top: 40%;
+        }
+        a{
+            height: 69px; width: 77px;
+            float: right;
+        } 
+    }
+}
+
