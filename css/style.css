@@ -25,7 +25,7 @@ body {
       color: #a8141a; }
       body a:hover:before {
         content: url(../images/style_menu_hover.png) !important; }
-  body #header {
+  body #main-header {
     background: url(../images/border_header.png) 0 9px repeat-y, url(../images/border_header.png) 12px 9px repeat-y, url(../images/border_header.png) 24px 9px repeat-y, url(../images/border_header.png) 36px 9px repeat-y, #000000 url(../images/border_header_row.png) right 14px repeat-y;
     padding: 3px 0 21px 0;
     text-align: center;
@@ -36,7 +36,7 @@ body {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-    body #header .logo {
+    body #main-header .logo {
       margin: 0 auto;
       width: 267px;
       height: 77px; }
